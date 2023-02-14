@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toku_app/shared/component/number_category_item.dart';
+import 'package:toku_app/shared/component/build_item.dart';
 import 'package:toku_app/shared/constant/constant.dart';
 
 class NumbersScreen extends StatelessWidget {
@@ -14,10 +14,12 @@ class NumbersScreen extends StatelessWidget {
         ),
       ),
       body: ListView.separated(
-          itemBuilder: (context, index) => NumberCategoryItem(
+          itemBuilder: (context, index) => BuildItem(
               image: numberModel[index].image,
               textInJapanese: numberModel[index].textInJapanese,
               textInEnglish: numberModel[index].textInEnglish,
+              category: 'numbers',
+              sound: numberModel[index].sound,
           ),
           separatorBuilder: (context, index) => SizedBox(
             height: 5,
