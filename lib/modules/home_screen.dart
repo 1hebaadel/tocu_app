@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toku_app/modules/color/colors_screen.dart';
+import 'package:toku_app/modules/color/colors_screen';
 import 'package:toku_app/modules/family_member/family_members_screen.dart';
 import 'package:toku_app/modules/number/numbers_screen.dart';
 import 'package:toku_app/modules/phrase/phrase_screen.dart';
